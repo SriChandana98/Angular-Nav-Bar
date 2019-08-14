@@ -1,0 +1,6 @@
+<h1>This is for Example</h1>
+<ul *ngFor="let p of people;index as i">
+    <li>{{i+1}}.Hello {{p}}</li>
+</ul>
+Name:<input type="text" [(ngModel)]="ppl"/>
+<button (click)="AddPeople(ppl)">Add </button>

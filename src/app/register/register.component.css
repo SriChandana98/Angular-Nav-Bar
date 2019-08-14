@@ -1,0 +1,55 @@
+*{box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 27%;
+  padding: 9px;
+  margin: 3px 0 9px 0;
+  display: block;
+  border: ridge;
+  background: aliceblue;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color:bisque;
+  outline: ridge;
+  outline-color: azure
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px ridge rosybrown;
+  margin-bottom: 27px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color:burlywood;
+  color:firebrick;
+  padding: 18px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: lemonchiffon;
+  text-align: center;
+}

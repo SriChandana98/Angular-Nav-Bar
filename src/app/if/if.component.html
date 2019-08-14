@@ -1,0 +1,11 @@
+
+    
+          <button type="submit" (click)=login()>Show</button>
+
+<!------------------------------------------------- IF AND ELSE ------------------------------------------------------------------- ---->
+    <div *ngIf="show==true;else elseTemplate">
+            <img src='assets/riya.jpg' alt="">
+    </div>
+    <ng-template #elseTemplate>
+        <img src='assets/yay.jpg' alt="">
+    </ng-template>

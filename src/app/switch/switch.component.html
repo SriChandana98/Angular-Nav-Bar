@@ -1,0 +1,14 @@
+<div class="container">
+    <label for="uname"><b>Username</b></label>
+<input type="text" [(ngModel)]="username" name="name" value="" placeholder="enter ur name"/>
+</div>
+
+
+<button (click)="login()">submit </button>
+<ul [ngSwitch]="person">
+    <li *ngSwitchCase="'riya'">Hello Bhattacharjee</li>
+    <li *ngSwitchCase="'Snehitha'">Hello Linga</li>
+    <li *ngSwitchCase="'Chandana'">Hello Samineni</li>
+    <li *ngSwitchCase="'poojitha'">Hello Juttiga</li>
+    <li *ngSwitchDefault>Hello why are doing this</li>
+</ul>
