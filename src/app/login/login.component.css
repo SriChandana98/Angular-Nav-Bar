@@ -12,7 +12,7 @@ input[type=text], input[type=password] {
   button {
     background-color: peru;
     color: white;
-    padding: 7px 12px;
+    padding:  12px 18px;
     margin: 6px 0;
     border: none;
     cursor: pointer;
@@ -57,18 +57,3 @@ input[type=text], input[type=password] {
     }
   }
   
-  /* li {
-    float: left;
-  } */
-/*   
-  li a {
-    display: block;
-    color: tomato;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: burlywood;
-  } */

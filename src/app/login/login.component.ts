@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
-
+  sub:any;
+  routeParam;
+  totalParams;
+  constructor(private pObjRoute:ActivatedRoute) { 
+    this.sub=this.pObjRoute.params.subscribe(params => {
+      this.routeParam=params['id']
+      this.totalParams=params;
+    });
+  }
   ngOnInit() {
   }
   username:string;
@@ -19,7 +26,8 @@ login(){
 if(this.username=="admin"&&this.password=="admin"){
   this.LoginStatus="Login Succesful"
   this.show=true;
-  alert(this.LoginStatus);
+ alert("welcome "+this.routeParam);
+  
 }
 else{
   this.show=false;

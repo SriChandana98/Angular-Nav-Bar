@@ -5,16 +5,18 @@ input[type=text], input[type=password] {
     display: block;
     border: 0.9px ridge lavenderblush;
     box-sizing: border-box;
-    background-color: lemonchiffon
+    background-color: lemonchiffon;
+  
   }
   
   /* Set a style for all buttons */
   button {
+    /* align-items: center; */
     background-color: peru;
     color: white;
-    padding: 7px 12px;
-    margin: 6px 0;
-    border: none;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: 0.9px ridge lavenderblush;
     cursor: pointer;
     width: 36%;
   }

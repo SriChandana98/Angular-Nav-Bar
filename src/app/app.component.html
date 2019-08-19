@@ -1,50 +1,20 @@
 <html>
 <head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:blanchedalmond;
-}
 
-li {
-  float: left;
-}
 
-li a {
-  display: block;
-  color: tomato;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: burlywood;
-}
-</style>
 </head>
 <body>
 
 <ul>
-  <li><a class="active" (click)="login()"> 
-    Login</a></li>
-  <li><a (click)="register()">
-         
-    Registration</a></li>
-    <li><a (click)="ifss()">
-        
-    If</a></li> 
-    <li><a (click)="for()">
-       
-    For</a></li>
-    <li><a (click)="switch()">
-        
-    Switch</a></li> 
+  <li><a routerLink="login/snehitha"> Login</a></li>
+  <li><a routerLink="register">Registration</a></li>
+    <li><a routerLink="if">If</a></li> 
+    <li><a routerLink="for">For</a></li>
+    <li><a routerLink="switch">xcSwitch</a></li> 
 </ul>
-<div>
+<router-outlet></router-outlet>
+
+<!-- <div>
     <br>
     <br>
     <br>
@@ -78,6 +48,6 @@ li a:hover {
             <ng-template #forTemplate>
             <app-for></app-for>
             </ng-template>    
-</div>
+</div> -->
 </body>
 </html>

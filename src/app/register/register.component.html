@@ -2,7 +2,7 @@
         <h1>Register</h1>
         <p>Please fill in this form to create an account.</p>
         <hr>
-    
+        <form ngOnNative>
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" required>
     
@@ -11,9 +11,10 @@
     
         <label for="psw-repeat"><b>Repeat Password</b></label>
         <input type="password" [(ngModel)]="confrimPassword" placeholder="Repeat Password" name="psw-repeat" required>
-        <hr>
+        
     
         <button type="submit" (click)=validate() class="registerbtn">Register</button>
+      </form>
       </div>
     
     
